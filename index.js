@@ -41,6 +41,9 @@ app.get('/last',async(req,res)=>{
         console.log(e);
     }
 })
+app.get('*',(req,res)=>{
+    res.send('UNDER MAINTENANCE!!')
+}
 
 app.listen(8001,(req,res)=>{
     console.log("server running on 8001");
